@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocalTranslator</string>
+    <string name="accessibility_service_description">Used for automatically inputting speech recognition results into input fields.</string>
+    
+    <!-- Tabs -->
+    <string name="tab_asr">语音转文字</string>
+    <string name="tab_translation">翻译</string>
+    <string name="tab_ocr">OCR</string>
+    
+    <!-- General -->
+    <string name="settings">设置</string>
+    <string name="close">关闭</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="copy">复制</string>
+    <string name="share">分享</string>
+    <string name="clear">清除</string>
+    <string name="retry">重试</string>
+    <string name="status_ready">已就绪</string>
+    <string name="status_not_initialized">未初始化</string>
+    <string name="status_loading">加载中...</string>
+    <string name="copied_to_clipboard">已复制到剪贴板</string>
+    
+    <!-- Translation Screen -->
+    <string name="trans_offline_title">离线翻译 (Hy-MT 1.5)</string>
+    <string name="trans_offline_desc">基于腾讯混元 1.8B 参数大模型，支持 33 种语言全离线运行。</string>
+    <string name="trans_model_loaded">当前已加载：%s</string>
+    <string name="trans_no_model_loaded">当前未加载模型</string>
+    <string name="trans_control_title">功能控制</string>
+    <string name="trans_floating_window">翻译悬浮窗</string>
+    <string name="trans_floating_window_desc">开启后可在其他应用上方使用离线翻译</string>
+    <string name="trans_load_model">加载模型</string>
+    <string name="trans_unload_model">卸载模型</string>
+    <string name="trans_auto_loaded_default">已自动加载默认模型</string>
+    <string name="trans_immediate_translate">立即翻译</string>
+    <string name="trans_stop_inference">停止推理</string>
+    <string name="trans_reverse_translate">反向翻译</string>
+    <string name="trans_input_placeholder">输入要翻译的文本...</string>
+    <string name="trans_result_label">翻译结果：</string>
+    <string name="trans_timeout">推理启动超时，请重试或重新加载模型</string>
+    <string name="trans_error">翻译出错：%s</string>
+    <string name="trans_no_downloaded_models">没有已下载的模型，请先下载</string>
+    <string name="trans_select_load_model">选择要加载的模型</string>
+    
+    <!-- OCR Screen -->
+    <string name="ocr_engine_title">PaddleOCR 引擎</string>
+    <string name="ocr_engine_desc">使用 PaddleLite 运行的移动端轻量化 OCR 引擎，支持中英文识别。</string>
+    <string name="ocr_status_label">状态：%s</string>
+    <string name="ocr_deploying">正在从 Assets 部署模型...</string>
+    <string name="ocr_init_success">OCR 引擎初始化成功</string>
+    <string name="ocr_init_failed">OCR 引擎初始化失败，请检查日志</string>
+    <string name="ocr_reinit">重新初始化</string>
+    <string name="ocr_model_unloaded">模型已卸载</string>
+    <string name="ocr_test_title">功能测试</string>
+    <string name="ocr_pick_image">从相册选择图片并识别</string>
+    <string name="ocr_recognizing">正在识别...</string>
+    <string name="ocr_no_text_detected">未在图片中检测到文本</string>
+    <string name="ocr_result_label">识别结果：</string>
+    <string name="ocr_send_to_translate">发送到翻译</string>
+    <string name="ocr_hint">提示：OCR 功能目前已集成到翻译悬浮球的“长按”手势中，进入“读屏”模式后即可自动识别并翻译屏幕内容。</string>
+    
+    <!-- Permission Section -->
+    <string name="perm_title">权限管理</string>
+    <string name="perm_overlay">悬浮窗权限</string>
+    <string name="perm_overlay_desc">已授权</string>
+    <string name="perm_overlay_needed">需要授权以显示悬浮窗</string>
+    <string name="perm_go_authorize">去授权</string>
+    <string name="perm_refresh">刷新状态</string>
+    
+    <!-- Model Items -->
+    <string name="model_downloaded">模型已下载 (%s)</string>
+    <string name="model_loaded">模型已加载 (%s)</string>
+    <string name="model_downloading">正在下载模型: %d%%</string>
+    <string name="model_download_btn">下载离线模型 (%s)</string>
+    
+    <!-- Language Names -->
+    <string name="lang_auto">自动检测</string>
+    <string name="lang_zh">中文</string>
+    <string name="lang_en">英语</string>
+    <string name="lang_ja">日语</string>
+    <string name="lang_ko">韩语</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">设置</string>
+    <string name="general_settings">通用设置</string>
+    <string name="app_language">应用语言</string>
+    <string name="go_to_system_settings">前往系统设置单独设置语言</string>
+    <string name="auto_enable_accessibility_service">自动启用无障碍服务</string>
+    <string name="auto_enable_accessibility_service_desc">启动悬浮窗时尝试自动激活无障碍服务（需授权）</string>
+    <string name="asr_settings">语音识别设置</string>
+    <string name="trans_settings">翻译设置</string>
+    <string name="ocr_settings">OCR 设置</string>
+    <string name="no_settings_available">暂无可用设置项</string>
+    
+    <!-- TTS Settings Details -->
+    <string name="floating_window_opacity">悬浮窗不透明度: %d%%</string>
+    <string name="text_color_hex">字体颜色 (16进制)</string>
+    <string name="default_start_model">默认启动模型</string>
+    <string name="not_set_ask_every_time">未设置 (每次启动时询问)</string>
+    <string name="remove_spaces_when_injecting">注入文本时移除空格</string>
+    <string name="stt_partial_confirm_threshold_title">中间结果确认阈值: %d 字符</string>
+    <string name="stt_partial_confirm_threshold_desc">调整实时识别中，中间态内容累积到多长时自动“固化”并提交最终翻译。较长的内容翻译更连贯，但延迟略高；较短的内容更实时，但可能产生丢字或语序不连贯。</string>
+    <string name="stt_translation_context_length_title">STT 翻译额外上下文: %d 字符</string>
+    <string name="stt_translation_context_length_desc">提交翻译时额外附加的历史已确认文本长度。增加上下文可以显著提高语义准确度（如代词指代、语境连贯性），但会增加翻译延迟。0 表示不附加历史上下文。</string>
+
+    <!-- Translation Settings Details -->
+    <string name="default_source_lang">默认原语言</string>
+    <string name="default_target_lang">默认翻译后语言</string>
+    <string name="default_load_model">默认加载模型</string>
+    <string name="ask_every_time">每次询问</string>
+
+    <!-- Permissions Dialog -->
+    <string name="perm_dialog_title">需要 WRITE_SECURE_SETTINGS 权限</string>
+    <string name="perm_dialog_desc">自动启用无障碍服务需要此权限。您可以通过以下方式授权：</string>
+    <string name="adb_command_title">1. ADB 命令：</string>
+    <string name="shizuku_auth">Shizuku 授权</string>
+    <string name="root_auth">ROOT 授权</string>
+    <string name="accessibility_activated_success">无障碍服务已自动启用</string>
+    <string name="accessibility_activation_failed">自动启用失败，请手动开启</string>
+    <string name="shizuku_not_running">Shizuku 未运行</string>
+    <string name="permission_granted_success">权限授权成功！</string>
+    <string name="permission_grant_failed">授权失败: %s</string>
+
+    <!-- First Launch Dialog -->
+    <string name="first_launch_title">应用权限与数据使用说明</string>
+    <string name="first_launch_disclaimer_title">免责声明</string>
+    <string name="first_launch_content">
+        1. 网络使用权：本程序仅在获取离线模型列表及下载用户选定的模型时使用网络。\n\n
+        2. 数据处理与隐私：包括 OCR 识别在内的所有核心功能均在本地离线处理。本程序不进行任何数据上传，亦不收集任何形式的用户日志。\n\n
+        3. 数据存储：程序仅保存用户手动选择并下载的离线模型，用于提供核心服务，除此之外不存储或分享任何个人数据。
+    </string>
+    <string name="first_launch_disclaimer_content">
+        用户自行使用本程序及其相关功能（包括但不限于语音转文字、翻译、OCR）所可能导致的不良影响或后果，均由用户自行承担，与开发者无关。
+    </string>
+    <string name="first_launch_agree_hint">请输入“我已阅读并同意该协议”以继续：</string>
+    <string name="first_launch_agree_text">我已阅读并同意该协议</string>
+    <string name="first_launch_start">开始使用</string>
+
+    <!-- About App -->
+    <string name="about_app">关于应用</string>
+    <string name="open_source_licenses">开源许可证</string>
+    <string name="open_source_licenses_disclaimer">以下为项目中已确认的开源代码许可证信息。尚未完成版本或来源核验的预编译依赖与模型暂不在此列出。</string>
+    <string name="user_agreement_settings">使用协议</string>
+    <string name="user_agreement_dialog_title">使用协议操作</string>
+    <string name="user_agreement_view">查看协议</string>
+    <string name="user_agreement_withdraw">撤回同意</string>
+    <string name="user_agreement_withdrawn_title">已撤回使用协议</string>
+    <string name="user_agreement_withdrawn_content">您已成功撤回对使用协议的同意。应用程序现在将退出，下次启动时您需要重新阅读并同意协议才能继续使用。</string>
+    <string name="ok">确定</string>
+    <string name="language_not_supported_warning">该模型可能不支持此语言，结果可能不准确，不建议使用。</string>
+    <string name="trans_context_length_title">翻译上下文窗口 (Tokens)</string>
+    <string name="trans_context_length_desc">较大的窗口支持更长的文本，但会消耗更多内存。小内存设备建议设为 512 或 1024。</string>
+    <string name="trans_use_mmap_title">启用内存映射 (mmap)</string>
+    <string name="trans_use_mmap_desc">开启时按需从磁盘读取模型，显著降低物理内存占用；关闭时模型将全部加载到 RAM，推理速度可能略有提升但极易导致内存不足崩溃。</string>
+    <string name="trans_show_all_models">所有离线翻译模型</string>
+    <string name="trans_show_recommended_models">推荐离线翻译模型</string>
+    <string name="trans_view_all_models">查看全部模型</string>
+    <string name="trans_view_recommended_models">显示推荐模型</string>
+    <string name="trans_llm_playground_title">LLM 实验室 (Playground)</string>
+    <string name="trans_llm_playground_desc_ready">已加载模型，点击进入自定义交互模式</string>
+    <string name="trans_llm_playground_desc_locked">需先加载任意翻译模型后开启</string>
+    <string name="trans_experimental_tag">(实验性)</string>
+    <string name="trans_llm_playground_activity_title">LLM 实验室</string>
+    <string name="trans_llm_playground_reset">重置</string>
+    <string name="trans_llm_playground_system_prompt_label">系统提示词 (System Prompt)</string>
+    <string name="trans_llm_playground_system_prompt_placeholder">输入系统指令...</string>
+    <string name="trans_llm_playground_system_prompt_default">你是一个乐于助人的 AI 助手。</string>
+    <string name="trans_llm_playground_user_message_label">用户消息</string>
+    <string name="trans_llm_playground_user_message_placeholder">你想聊点什么？</string>
+    <string name="trans_llm_playground_send">发送消息</string>
+    <string name="trans_llm_playground_thinking">思考中...</string>
+    <string name="trans_llm_playground_ai_response">AI 回复:</string>
+    <string name="trans_llm_playground_copy_success">已复制内容</string>
+    <string name="bypass_screen_capture_auth">绕过屏幕截图授权</string>
+    <string name="bypass_screen_capture_auth_desc">通过 ADB/Shizuku 授权后，录屏不再弹出确认框（仅限部分系统）</string>
+    <string name="perm_project_media_title">需要 PROJECT_MEDIA 权限</string>
+    <string name="perm_project_media_desc">绕过屏幕截图授权需要此权限。您可以通过以下方式授权：</string>
+    <string name="adb_project_media_command">adb shell appops set %s PROJECT_MEDIA allow</string>
+    <string name="trans_llm_playground_params_title">推理参数设置</string>
+    <string name="trans_llm_playground_temp_desc">控制随机性</string>
+    <string name="trans_llm_playground_topp_desc">核采样</string>
+    <string name="trans_llm_playground_repeat_penalty_desc">重复惩罚</string>
+    <string name="trans_llm_playground_send_btn">发送</string>
+    <string name="trans_llm_playground_stop_btn">停止</string>
+    <string name="shizuku_reclick_hint">Shizuku 授权成功，请重新点击授权按钮</string>
+    <string name="trans_playground_disclaimer_title">实验性功能声明</string>
+    <string name="trans_playground_disclaimer_content">实验性功能：该功能出于实验性目的实现，可能出现预期外的行为或者导致其他 bug，该功能可能不受到长期支持和维护，请酌情使用。</string>
+    <string name="trans_playground_disclaimer_agree">我已经了解</string>
+    <string name="ocr_trans_mode_title">OCR 翻译模式</string>
+    <string name="ocr_trans_mode_auto_fill">自动填充 (默认)</string>
+    <string name="ocr_trans_mode_full_screen">全屏翻译</string>
+    <string name="ocr_use_accessibility_overlay_title">使用无障碍绘制覆盖层</string>
+    <string name="ocr_use_accessibility_overlay_desc">启用后将使用无障碍服务强行覆盖在状态栏上。解决部分机型全屏模式下坐标向下偏移的问题，需开启无障碍服务。</string>
+    <string name="ocr_trans_mode_desc">自动填充：识别后将文本填入上方输入框；全屏翻译：在屏幕原位显示翻译内容。</string>
+    <string name="ocr_capture_mode_title">屏幕获取方式</string>
+    <string name="ocr_capture_mode_media_projection">录屏权限 (标准)</string>
+    <string name="ocr_capture_mode_accessibility">无障碍 (推荐给安卓13)</string>
+    <string name="ocr_capture_mode_root">ROOT (Shell)</string>
+    <string name="ocr_capture_mode_desc">录屏权限：标准方式，安卓14+最稳定；无障碍：利用无障碍权限获取截图，无需确认弹窗，解决部分安卓13机型无法启动录屏的问题；ROOT：最高权限获取，速度最快。</string>
+    <string name="ocr_trans_mode_paddle_warning">注意：使用 PaddleOCR 时全屏翻译暂不可用，将自动退回到自动填充。</string>
+    <string name="ocr_merge_sensitivity_title">OCR 合并敏感度: %d%%</string>
+    <string name="ocr_merge_sensitivity_desc">调整多行文本合并为段落的倾向。百分比越高越倾向于将邻近行合并，有助于保持翻译上下文，但也可能导致不同段落被误合并。</string>
+    <string name="google_ocr_granularity_title">Google OCR 粒度</string>
+    <string name="google_ocr_granularity_desc">选择引擎原始识别结果的粒度。块识别通常已包含引擎内置的段落逻辑，行识别则依赖本应用的自定义合并算法。</string>
+    <string name="google_ocr_granularity_line">行识别 (推荐)</string>
+    <string name="google_ocr_granularity_block">块识别 (原厂逻辑)</string>
+    <string name="ocr_full_screen_bg_opacity_title">全屏背景压暗程度: %d%%</string>
+    <string name="ocr_full_screen_bg_opacity_desc">调整进入全屏翻译模式时，屏幕背景的半透明压暗程度。调低可更清晰地看到原图背景，调高有助于集中阅读翻译内容。</string>
+    <string name="ocr_engine_select_title">识别引擎选择</string>
+    <string name="ocr_engine_google_recommend">Google (推荐)</string>
+    <string name="trans_engine_select_title">翻译引擎选择</string>
+    <string name="trans_engine_llm">端侧大模型 (推荐)</string>
+    <string name="trans_engine_google">Google 离线翻译</string>
+    <string name="trans_engine_llm_desc">基于 Llama.cpp 运行的大模型，翻译质量高，支持语境理解，但对硬件要求较高。</string>
+    <string name="trans_engine_google_desc">Google ML Kit 离线引擎，极致轻量，速度快，适合 AOSP 或低端设备，但翻译语感相对生硬。</string>
+    <string name="ocr_engine_paddle">PaddleOCR</string>
+    <string name="ocr_engine_google_desc">使用 Google ML Kit，支持中英日韩离线识别，无需手动初始化。</string>
+    <string name="ocr_engine_paddle_desc">使用 PaddleOCR，性能出色，首次使用需在 OCR 识图页面点击加载模型。</string>
+    <string name="ocr_quality_title">识别质量 (长边分辨率)</string>
+    <string name="ocr_quality_desc">调节 OCR 处理图像的预缩放尺寸。分辨率越高识别越准但负载越大。低端设备建议 1080p 以下，高端设备可设为 2048p。</string>
+    <string name="ocr_quality_smooth">流畅 (省电/低发热)</string>
+    <string name="ocr_quality_balanced">平衡 (推荐)</string>
+    <string name="ocr_quality_high">高清 (更准确)</string>
+    <string name="ocr_quality_ultra">超清 (极致精度)</string>
+    <string name="ocr_full_screen_analyzing">正在分析屏幕...</string>
+    <string name="ocr_detail_title">翻译详情</string>
+    <string name="ocr_original_text">原文</string>
+    <string name="ocr_translated_text">译文</string>
+    <string name="ocr_translate_all">全部翻译</string>
+    <string name="trans_floating_title">离线翻译</string>
+    <string name="trans_not_loaded">未加载</string>
+    <string name="trans_ready">就绪</string>
+    <string name="trans_minimize">缩小</string>
+    <string name="trans_reverse_btn">反向</string>
+    <string name="trans_ocr_btn">屏幕识别</string>
+    <string name="trans_stop">停止</string>
+    <string name="trans_translate">翻译</string>
+    <string name="trans_input_hint">输入文字...</string>
+    <string name="stt_trans_engine_machine">机翻 (Google)</string>
+    <string name="stt_trans_engine_ai">AI 模型 (更准确)</string>
+    <string name="stt_trans_ai_model_not_loaded">AI 模型未加载</string>
+    <string name="stt_trans_load_ai_model">加载 AI 模型</string>
+</resources>

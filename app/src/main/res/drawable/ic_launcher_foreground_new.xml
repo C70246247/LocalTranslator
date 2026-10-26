@@ -1,0 +1,56 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <group
+      android:pivotX="256"
+      android:pivotY="256"
+      android:scaleX="0.65"
+      android:scaleY="0.65">
+    
+    <!-- 1. Background Square (Bottom Layer) -->
+    <path
+        android:name="bg_square"
+        android:pathData="M112,64L400,64A48,48 0,0 1,448 112L448,400A48,48 0,0 1,400 448L112,448A48,48 0,0 1,64 400L64,112A48,48 0,0 1,112 64z"
+        android:fillColor="@color/icon_square_color"/>
+
+    <!-- 2. Side Dots -->
+    <group android:name="dots_group" android:pivotX="256" android:pivotY="256">
+      <path android:pathData="M40,160L56,160A8,8 0,0 1,64 168L64,184A8,8 0,0 1,56 192L40,192A8,8 0,0 1,32 184L32,168A8,8 0,0 1,40 160z" android:fillColor="#61D4FF"/>
+      <path android:pathData="M40,240L56,240A8,8 0,0 1,64 248L64,264A8,8 0,0 1,56 272L40,272A8,8 0,0 1,32 264L32,248A8,8 0,0 1,40 240z" android:fillColor="#61D4FF"/>
+      <path android:pathData="M40,320L56,320A8,8 0,0 1,64 328L64,344A8,8 0,0 1,56 352L40,352A8,8 0,0 1,32 344L32,328A8,8 0,0 1,40 320z" android:fillColor="#61D4FF"/>
+      <path android:pathData="M456,160L472,160A8,8 0,0 1,480 168L480,184A8,8 0,0 1,472 192L456,192A8,8 0,0 1,448 184L448,168A8,8 0,0 1,456 160z" android:fillColor="#61D4FF"/>
+      <path android:pathData="M456,240L472,240A8,8 0,0 1,480 248L480,264A8,8 0,0 1,472 272L456,272A8,8 0,0 1,448 264L448,248A8,8 0,0 1,456 240z" android:fillColor="#61D4FF"/>
+      <path android:pathData="M456,320L472,320A8,8 0,0 1,480 328L480,344A8,8 0,0 1,472 352L456,352A8,8 0,0 1,448 344L448,328A8,8 0,0 1,456 320z" android:fillColor="#61D4FF"/>
+    </group>
+
+    <!-- 3. White Bubble -->
+    <group android:name="white_bubble_group" android:pivotX="265" android:pivotY="275" android:alpha="1">
+      <path android:pathData="M177,175L353,175A42,42 0,0 1,395 217L395,333A42,42 0,0 1,353 375L177,375A42,42 0,0 1,135 333L135,217A42,42 0,0 1,177 175z" android:fillColor="#ffffff" android:fillAlpha="0.95"/>
+      <path android:pathData="M330,375l30,0l-15,30z" android:fillColor="#ffffff" android:fillAlpha="0.95"/>
+    </group>
+
+    <!-- 4. Light Blue Bubble -->
+    <group android:name="blue_bubble_group" android:pivotX="245" android:pivotY="240" android:alpha="1">
+      <path android:pathData="M157,140L333,140A42,42 0,0 1,375 182L375,298A42,42 0,0 1,333 340L157,340A42,42 0,0 1,115 298L115,182A42,42 0,0 1,157 140z" android:fillColor="#D6ECFF"/>
+      <path android:pathData="M200,340l30,0l-15,30z" android:fillColor="#D6ECFF"/>
+    </group>
+
+    <!-- 5. Wave -->
+    <path
+        android:name="wave_path"
+        android:pathData="M175,235l35,30l35,-45l35,60l35,-30"
+        android:strokeWidth="16"
+        android:fillColor="#00000000"
+        android:strokeColor="#0077F6"
+        android:strokeLineCap="round"
+        android:trimPathEnd="1"/>
+
+    <!-- 6. Green Line (Top Layer) -->
+    <group android:name="green_line_group" android:pivotX="240" android:pivotY="358" android:scaleX="1">
+      <path android:pathData="M245,350L335,350A5,5 0,0 1,340 355L340,361A5,5 0,0 1,335 366L245,366A5,5 0,0 1,240 361L240,355A5,5 0,0 1,245 350z" android:fillColor="#4CE0C3"/>
+    </group>
+
+  </group>
+</vector>

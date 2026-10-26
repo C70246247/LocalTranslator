@@ -1,0 +1,18 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_launcher_foreground_new">
+    <target
+        android:name="dots_group"
+        android:animation="@animator/dots_scale" />
+    <target
+        android:name="white_bubble_group"
+        android:animation="@animator/white_bubble_anim" />
+    <target
+        android:name="green_line_group"
+        android:animation="@animator/green_line_draw" />
+    <target
+        android:name="blue_bubble_group"
+        android:animation="@animator/blue_bubble_anim" />
+    <target
+        android:name="wave_path"
+        android:animation="@animator/wave_draw" />
+</animated-vector>

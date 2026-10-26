@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocalTranslator</string>
+    <string name="accessibility_service_description">Used for automatically inputting speech recognition results into input fields.</string>
+    
+    <!-- Tabs -->
+    <string name="tab_asr">Speech to Text</string>
+    <string name="tab_translation">Translation</string>
+    <string name="tab_ocr">OCR</string>
+    
+    <!-- General -->
+    <string name="settings">Settings</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="clear">Clear</string>
+    <string name="retry">Retry</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_not_initialized">Not Initialized</string>
+    <string name="status_loading">Loading...</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    
+    <!-- Translation Screen -->
+    <string name="trans_offline_title">Offline Translation (Hy-MT 1.5)</string>
+    <string name="trans_offline_desc">Based on Tencent Hunyuan 1.8B large model, supports 33 languages fully offline.</string>
+    <string name="trans_model_loaded">Currently Loaded: %s</string>
+    <string name="trans_no_model_loaded">No model loaded</string>
+    <string name="trans_control_title">Functional Control</string>
+    <string name="trans_floating_window">Translation Floating Window</string>
+    <string name="trans_floating_window_desc">Enable to use offline translation on top of other apps</string>
+    <string name="trans_load_model">Load Model</string>
+    <string name="trans_unload_model">Unload Model</string>
+    <string name="trans_auto_loaded_default">Auto-loaded default model</string>
+    <string name="trans_immediate_translate">Translate Now</string>
+    <string name="trans_stop_inference">Stop Inference</string>
+    <string name="trans_reverse_translate">Reverse</string>
+    <string name="trans_input_placeholder">Enter text to translate...</string>
+    <string name="trans_result_label">Translation Result:</string>
+    <string name="trans_timeout">Inference timeout, please try again or reload model</string>
+    <string name="trans_error">Translation error: %s</string>
+    <string name="trans_no_downloaded_models">No downloaded models, please download first</string>
+    <string name="trans_select_load_model">Select Model to Load</string>
+    
+    <!-- OCR Screen -->
+    <string name="ocr_engine_title">PaddleOCR Engine</string>
+    <string name="ocr_engine_desc">Mobile lightweight OCR engine using PaddleLite, supports Chinese and English.</string>
+    <string name="ocr_status_label">Status: %s</string>
+    <string name="ocr_deploying">Deploying models from Assets...</string>
+    <string name="ocr_init_success">OCR Engine initialized successfully</string>
+    <string name="ocr_init_failed">OCR Engine initialization failed, please check logs</string>
+    <string name="ocr_reinit">Re-initialize</string>
+    <string name="ocr_model_unloaded">Model unloaded</string>
+    <string name="ocr_test_title">Functional Test</string>
+    <string name="ocr_pick_image">Pick image from gallery and recognize</string>
+    <string name="ocr_recognizing">Recognizing...</string>
+    <string name="ocr_no_text_detected">No text detected in image</string>
+    <string name="ocr_result_label">OCR Result:</string>
+    <string name="ocr_send_to_translate">Send to Translate</string>
+    <string name="ocr_hint">Hint: OCR function is integrated into the "Long Press" gesture of the translation ball. Enter "Screen Reading" mode to automatically recognize and translate screen content.</string>
+    
+    <!-- Permission Section -->
+    <string name="perm_title">Permission Management</string>
+    <string name="perm_overlay">Overlay Permission</string>
+    <string name="perm_overlay_desc">Authorized</string>
+    <string name="perm_overlay_needed">Need authorization to display floating window</string>
+    <string name="perm_go_authorize">Go to Authorize</string>
+    <string name="perm_refresh">Refresh Status</string>
+    
+    <!-- Model Items -->
+    <string name="model_downloaded">Model Downloaded (%s)</string>
+    <string name="model_loaded">Model Loaded (%s)</string>
+    <string name="model_downloading">Downloading Model: %d%%</string>
+    <string name="model_download_btn">Download Offline Model (%s)</string>
+    
+    <!-- Language Names -->
+    <string name="lang_auto">Auto Detect</string>
+    <string name="lang_zh">Chinese</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ja">Japanese</string>
+    <string name="lang_ko">Korean</string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Settings</string>
+    <string name="general_settings">General Settings</string>
+    <string name="app_language">App Language</string>
+    <string name="go_to_system_settings">Go to System Settings for App Locale</string>
+    <string name="auto_enable_accessibility_service">Auto Enable Accessibility Service</string>
+    <string name="auto_enable_accessibility_service_desc">Try to activate accessibility service automatically when starting floating window (Authorization required)</string>
+    <string name="asr_settings">Speech Recognition Settings</string>
+    <string name="trans_settings">Translation Settings</string>
+    <string name="ocr_settings">OCR Settings</string>
+    <string name="no_settings_available">No settings available</string>
+    
+    <!-- TTS Settings Details -->
+    <string name="floating_window_opacity">Floating Window Opacity: %d%%</string>
+    <string name="text_color_hex">Text Color (Hex)</string>
+    <string name="default_start_model">Default Start Model</string>
+    <string name="not_set_ask_every_time">Not set (Ask every time)</string>
+    <string name="remove_spaces_when_injecting">Remove spaces when injecting text</string>
+
+    <!-- Translation Settings Details -->
+    <string name="default_source_lang">Default Source Language</string>
+    <string name="default_target_lang">Default Target Language</string>
+    <string name="default_load_model">Default Load Model</string>
+    <string name="ask_every_time">Ask every time</string>
+
+    <!-- Permissions Dialog -->
+    <string name="perm_dialog_title">WRITE_SECURE_SETTINGS Permission Required</string>
+    <string name="perm_dialog_desc">This permission is required to auto-enable accessibility service. You can grant it via:</string>
+    <string name="adb_command_title">1. ADB Command:</string>
+    <string name="shizuku_auth">Shizuku Authorization</string>
+    <string name="root_auth">ROOT Authorization</string>
+    <string name="accessibility_activated_success">Accessibility service activated successfully</string>
+    <string name="accessibility_activation_failed">Auto activation failed, please enable manually</string>
+    <string name="shizuku_not_running">Shizuku is not running</string>
+    <string name="permission_granted_success">Permission granted successfully!</string>
+    <string name="permission_grant_failed">Grant failed: %s</string>
+
+    <!-- First Launch Dialog -->
+    <string name="first_launch_title">App Permissions &amp; Data Usage Statement</string>
+    <string name="first_launch_disclaimer_title">Disclaimer</string>
+    <string name="first_launch_content">
+        1. Network Usage: This program only uses the network to fetch the offline model list and download models selected by the user.\n\n
+        2. Data Processing &amp; Privacy: All core functions, including OCR recognition, are processed locally offline. This program does not upload any data nor collect any form of user logs.\n\n
+        3. Data Storage: The program only saves offline models manually selected and downloaded by the user to provide core services. No other personal data is stored or shared.
+    </string>
+    <string name="first_launch_disclaimer_content">
+        Any adverse effects or consequences resulting from the user\'s own use of this program and its related functions (including but not limited to speech-to-text, translation, OCR) are the sole responsibility of the user and have nothing to do with the developer.
+    </string>
+    <string name="first_launch_agree_hint">Please type \"I have read and agree to the agreement\" to continue:</string>
+    <string name="first_launch_agree_text">I have read and agree to the agreement</string>
+    <string name="first_launch_start">Start Using</string>
+
+    <!-- About App -->
+    <string name="about_app">About App</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="open_source_licenses_disclaimer">The following information covers open-source code licenses confirmed in this project. Prebuilt dependencies and models whose versions or origins have not been verified are not listed here.</string>
+    <string name="user_agreement_settings">User Agreement</string>
+    <string name="user_agreement_dialog_title">Agreement Actions</string>
+    <string name="user_agreement_view">View Agreement</string>
+    <string name="user_agreement_withdraw">Withdraw Consent</string>
+    <string name="user_agreement_withdrawn_title">Consent Withdrawn</string>
+    <string name="user_agreement_withdrawn_content">You have successfully withdrawn your consent to the User Agreement. The application will now exit, and you will need to re-read and agree to the agreement next time you start it.</string>
+    <string name="ok">OK</string>
+    <string name="language_not_supported_warning">This language may not be supported by the current model. Results might be inaccurate and its use is not recommended.</string>
+    <string name="trans_context_length_title">Translation Context Window (Tokens)</string>
+    <string name="trans_context_length_desc">Larger windows support longer text but consume more memory. Recommended 512 or 1024 for low-memory devices.</string>
+    <string name="trans_use_mmap_title">Enable Memory Mapping (mmap)</string>
+    <string name="trans_use_mmap_desc">When enabled, model weights are paged from disk, significantly reducing RAM usage. When disabled, the full model is loaded into RAM, which may improve speed but often causes OOM crashes.</string>
+    <string name="trans_show_all_models">All Offline Translation Models</string>
+    <string name="trans_show_recommended_models">Recommended Translation Models</string>
+    <string name="trans_view_all_models">View All Models</string>
+    <string name="trans_view_recommended_models">Show Recommended</string>
+    <string name="trans_llm_playground_title">LLM Playground</string>
+    <string name="trans_llm_playground_desc_ready">Model loaded, click to enter custom interaction mode</string>
+    <string name="trans_llm_playground_desc_locked">Load any translation model first to enable</string>
+    <string name="trans_experimental_tag">(Experimental)</string>
+    <string name="trans_llm_playground_activity_title">LLM Playground</string>
+    <string name="trans_llm_playground_reset">Reset</string>
+    <string name="trans_llm_playground_system_prompt_label">System Prompt</string>
+    <string name="trans_llm_playground_system_prompt_placeholder">Enter system instructions...</string>
+    <string name="trans_llm_playground_system_prompt_default">You are a helpful AI assistant.</string>
+    <string name="trans_llm_playground_user_message_label">User Message</string>
+    <string name="trans_llm_playground_user_message_placeholder">What\'s on your mind?</string>
+    <string name="trans_llm_playground_send">Send Message</string>
+    <string name="trans_llm_playground_thinking">Thinking...</string>
+    <string name="trans_llm_playground_ai_response">AI Response:</string>
+    <string name="trans_llm_playground_copy_success">Content copied</string>
+    <string name="bypass_screen_capture_auth">Bypass Screen Capture Auth</string>
+    <string name="bypass_screen_capture_auth_desc">Grant via ADB/Shizuku to skip the confirmation dialog (System dependent)</string>
+    <string name="perm_project_media_title">PROJECT_MEDIA Permission Required</string>
+    <string name="perm_project_media_desc">This permission is required to bypass screen capture authorization. Grant via:</string>
+    <string name="adb_project_media_command">adb shell appops set %s PROJECT_MEDIA allow</string>
+    <string name="trans_llm_playground_params_title">Inference Parameters</string>
+    <string name="trans_llm_playground_temp_desc">Control randomness</string>
+    <string name="trans_llm_playground_topp_desc">Nucleus sampling</string>
+    <string name="trans_llm_playground_repeat_penalty_desc">Repeat penalty</string>
+    <string name="trans_llm_playground_send_btn">Send</string>
+    <string name="trans_llm_playground_stop_btn">Stop</string>
+    <string name="shizuku_reclick_hint">Shizuku authorized, please click the button again</string>
+    <string name="trans_playground_disclaimer_title">Experimental Feature Disclaimer</string>
+    <string name="trans_playground_disclaimer_content">Experimental Feature: This feature is implemented for experimental purposes and may exhibit unexpected behavior or cause other bugs. This feature may not receive long-term support and maintenance. Please use with discretion.</string>
+    <string name="trans_playground_disclaimer_agree">I Understand</string>
+    <string name="ocr_trans_mode_title">OCR Translation Mode</string>
+    <string name="ocr_trans_mode_auto_fill">Auto-fill (Default)</string>
+    <string name="ocr_trans_mode_full_screen">Full-screen Translation</string>
+    <string name="ocr_use_accessibility_overlay_title">Use Accessibility Overlay</string>
+    <string name="ocr_use_accessibility_overlay_desc">Uses accessibility service to force overlay over status bar. Fixes coordinate offset on some devices. Requires accessibility service.</string>
+    <string name="ocr_trans_mode_desc">Auto-fill: Fills recognized text into input box; Full-screen: Displays translation over original text.</string>
+    <string name="ocr_trans_mode_paddle_warning">Note: Full-screen translation is not yet available with PaddleOCR and will automatically fallback to auto-fill.</string>
+    <string name="ocr_merge_sensitivity_title">OCR Merge Sensitivity: %d%%</string>
+    <string name="ocr_merge_sensitivity_desc">Adjust the tendency to merge multiple lines into paragraphs. Higher percentages favor merging adjacent lines to maintain context, but may cause different paragraphs to be incorrectly merged.</string>
+    <string name="google_ocr_granularity_title">Google OCR Granularity</string>
+    <string name="google_ocr_granularity_desc">Choose the granularity of the engine\'s raw recognition results. Block recognition usually includes the engine\'s built-in paragraph logic, while line recognition relies on this app\'s custom merging algorithm.</string>
+    <string name="google_ocr_granularity_line">Line Recognition (Recommended)</string>
+    <string name="google_ocr_granularity_block">Block Recognition (Native Logic)</string>
+    <string name="ocr_full_screen_bg_opacity_title">Full-screen Background Dimming: %d%%</string>
+    <string name="ocr_full_screen_bg_opacity_desc">Adjust the background dimming intensity when entering full-screen translation mode. Lowering it makes the original background clearer, while raising it helps focus on reading translation content.</string>
+    <string name="ocr_engine_select_title">Recognition Engine Selection</string>
+    <string name="ocr_engine_google_recommend">Google (Recommended)</string>
+    <string name="trans_engine_select_title">Translation Engine Selection</string>
+    <string name="trans_engine_llm">On-device LLM (Recommended)</string>
+    <string name="trans_engine_google">Google Offline Translation</string>
+    <string name="trans_engine_llm_desc">LLM based on Llama.cpp. High quality, supports context understanding, but higher hardware requirements.</string>
+    <string name="trans_engine_google_desc">Google ML Kit offline engine. Extremely lightweight, fast, suitable for AOSP or low-end devices, but translation may feel more literal.</string>
+    <string name="ocr_engine_paddle">PaddleOCR</string>
+    <string name="ocr_engine_google_desc">Uses Google ML Kit, supports offline recognition for Chinese, English, Japanese, and Korean. No manual initialization required.</string>
+    <string name="ocr_engine_paddle_desc">Uses PaddleOCR, high performance. First-time use requires clicking "Load Model" on the OCR recognition page.</string>
+    <string name="ocr_quality_title">Recognition Quality (Max Side Resolution)</string>
+    <string name="ocr_quality_desc">Adjust the pre-scaling size of processed images. Higher resolution is more accurate but adds more load. 1080p or below is recommended for low-end devices, 2048p for high-end.</string>
+    <string name="ocr_quality_smooth">Smooth (Battery Saving)</string>
+    <string name="ocr_quality_balanced">Balanced (Recommended)</string>
+    <string name="ocr_quality_high">HD (More Accurate)</string>
+    <string name="ocr_quality_ultra">Ultra (Max Precision)</string>
+    <string name="ocr_full_screen_analyzing">Analyzing screen...</string>
+    <string name="ocr_detail_title">Translation Details</string>
+    <string name="ocr_original_text">Original</string>
+    <string name="ocr_translated_text">Translated</string>
+    <string name="ocr_translate_all">Translate All</string>
+    <string name="trans_floating_title">Offline Translation</string>
+    <string name="trans_not_loaded">Not Loaded</string>
+    <string name="trans_ready">Ready</string>
+    <string name="trans_minimize">Minimize</string>
+    <string name="trans_reverse_btn">Reverse</string>
+    <string name="trans_ocr_btn">Screen OCR</string>
+    <string name="trans_stop">Stop</string>
+    <string name="trans_translate">Translate</string>
+    <string name="trans_input_hint">Enter text...</string>
+    <string name="stt_trans_engine_machine">Machine (Google)</string>
+    <string name="stt_trans_engine_ai">AI Model (Accurate)</string>
+    <string name="stt_trans_ai_model_not_loaded">AI Model Not Loaded</string>
+    <string name="stt_trans_load_ai_model">Load AI Model</string>
+</resources>

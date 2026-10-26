@@ -1,0 +1,27 @@
+<!--
+  ~ Copyright (C) 2026 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <path
+      android:pathData="M311.5,490.7c81.1,0 145.1,-64 145.1,-145.1L456.5,192c0,-81.1 -64,-145.1 -145.1,-145.1S166.4,110.9 166.4,192v157.9c0,76.8 64,140.8 145.1,140.8zM375.5,345.6c0,34.1 -29.9,64 -64,64s-64,-25.6 -64,-64L247.5,192c0,-38.4 29.9,-64 64,-64s64,29.9 64,64v153.6z"
+      android:fillColor="#61d4ff"/>
+  <path
+      android:pathData="M584.5,388.3L503.5,371.2 499.2,384a202,202 0,0 1,-153.6 153.6C243.2,558.9 140.8,490.7 119.5,384l-4.3,-12.8 -76.8,17.1 4.3,12.8c25.6,128 140.8,221.9 268.8,221.9s243.2,-93.9 268.8,-221.9l4.3,-12.8zM977.1,627.2v-81.1H789.3v-64h-81.1v64H520.5V627.2h302.9c-17.1,46.9 -42.7,89.6 -76.8,128 -21.3,-25.6 -38.4,-51.2 -55.5,-81.1l-4.3,-4.3h-89.6l4.3,12.8c21.3,46.9 51.2,89.6 85.3,128C640,849.1 588.8,878.9 529.1,896l-8.5,4.3 21.3,76.8 8.5,-4.3c68.3,-21.3 136.5,-59.7 192,-106.7 55.5,46.9 119.5,85.3 192,106.7l8.5,4.3 21.3,-76.8 -8.5,-4.3C896,878.9 844.8,849.1 797.9,810.7 844.8,755.2 878.9,691.2 904.5,622.9h72.5zM802.1,290.1V435.2H896V290.1c0,-81.1 -64,-145.1 -145.1,-145.1H567.5v93.9h183.5c25.6,-4.3 51.2,21.3 51.2,51.2zM256,806.4V661.3h-93.9V806.4c0,81.1 64,145.1 145.1,145.1h183.5V857.6h-179.2C281.6,857.6 256,836.3 256,806.4z"
+      android:fillColor="#61d4ff"/>
+</vector>
